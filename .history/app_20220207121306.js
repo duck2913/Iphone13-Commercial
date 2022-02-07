@@ -12,8 +12,6 @@ colorsEl.forEach((colorEl, index) => {
 		gsap.to(gallery, { duration: 1, x: -coord, ease: "Power2.easeOut" });
 		// change color of the close up image
 		const selectedColor = colorEl.dataset.color;
-		if (currentColor === selectedColor) return;
-		currentColor = selectedColor;
 		const closeUpImg = document.querySelector(`.${selectedColor}`);
 		gsap.fromTo(
 			closeUpImg,

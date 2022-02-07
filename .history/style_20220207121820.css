@@ -57,7 +57,7 @@ nav button {
 	content: "";
 	width: 0;
 	height: 2px;
-	background-image: linear-gradient(to left, rgb(198, 100, 237), rgb(18, 66, 156));
+	background-image: linear-gradient(to left, cornflowerblue, rgb(18, 66, 156));
 	position: absolute;
 	bottom: 0;
 	transition: all 0.4s ease;

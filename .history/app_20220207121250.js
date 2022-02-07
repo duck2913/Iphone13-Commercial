@@ -3,8 +3,6 @@ const slides = document.querySelectorAll(".img__container");
 const gallery = document.querySelector(".gallery");
 //carousel
 let z_index = 2;
-let currentColor = "blue";
-
 colorsEl.forEach((colorEl, index) => {
 	const coord = slides[index].getBoundingClientRect().left;
 	colorEl.addEventListener("click", function () {
@@ -12,8 +10,7 @@ colorsEl.forEach((colorEl, index) => {
 		gsap.to(gallery, { duration: 1, x: -coord, ease: "Power2.easeOut" });
 		// change color of the close up image
 		const selectedColor = colorEl.dataset.color;
-		if (currentColor === selectedColor) return;
-		currentColor = selectedColor;
+		let currentColor = selectedColor;
 		const closeUpImg = document.querySelector(`.${selectedColor}`);
 		gsap.fromTo(
 			closeUpImg,
