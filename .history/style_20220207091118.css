@@ -79,6 +79,7 @@ section {
 
 /* Second page */
 .second-page {
+	transform: translateX(-1rem);
 	min-height: 150vh;
 	color: rgba(255, 255, 255, 0.733);
 	position: relative;
@@ -89,7 +90,6 @@ section {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	font-size: 3.5rem;
 	transform: translate(-50%, -50%);
 }
 
