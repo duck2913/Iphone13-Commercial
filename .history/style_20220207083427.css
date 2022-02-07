@@ -30,16 +30,6 @@ nav .logo {
 	font-weight: bold;
 }
 
-nav button {
-	background-color: cornflowerblue;
-	font-family: inherit;
-	color: white;
-	border: none;
-	border-radius: 1rem;
-	padding: 5px 1rem;
-	cursor: pointer;
-}
-
 .nav__links {
 	display: flex;
 	gap: 1.5rem;
@@ -55,15 +45,11 @@ nav button {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
-	text-align: center;
-}
-
-.heading--1 {
-	font-size: 4rem;
 }
 
 .first-page video {
 	position: absolute;
+	transform: scale(0.5);
+	top: 10%;
 	z-index: -1;
-	transform: translateY(-3rem);
 }
