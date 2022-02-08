@@ -228,13 +228,9 @@ nav button {
 	color: rgb(255, 255, 255);
 }
 
-.product__text-container > * {
-	flex-basis: 20%;
-}
-
 .product__text-container h3 {
 	color: rgba(255, 255, 255, 0.726);
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 }
 
 .product__text-container span {

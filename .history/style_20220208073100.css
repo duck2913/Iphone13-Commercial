@@ -206,37 +206,4 @@ nav button {
 /* Fifth page */
 .fifth-page {
 	padding: 5rem 10rem;
-	position: relative;
-	min-height: 100vh;
-}
-
-.product-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-	height: 100%;
-	object-fit: cover;
-}
-
-.product__text-container {
-	display: flex;
-	height: 100vh;
-	align-items: center;
-	justify-content: space-between;
-	color: rgb(255, 255, 255);
-}
-
-.product__text-container > * {
-	flex-basis: 20%;
-}
-
-.product__text-container h3 {
-	color: rgba(255, 255, 255, 0.726);
-	margin-bottom: 4rem;
-}
-
-.product__text-container span {
-	font-size: 2rem;
 }
