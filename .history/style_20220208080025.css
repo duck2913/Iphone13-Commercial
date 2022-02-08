@@ -14,8 +14,7 @@ h4 {
 }
 
 body {
-	width: 100vw;
-	overflow-x: hidden;
+	max-width: 100vw;
 }
 
 nav {
@@ -255,6 +254,11 @@ nav button {
 	max-height: 80vh;
 }
 
+.video-container {
+	position: absolute;
+	transform: scale(0.7);
+}
+
 .final-page .text {
 	font-weight: 500;
 	font-size: 1.6rem;
@@ -264,24 +268,8 @@ nav button {
 	font-size: 3rem;
 }
 
-.video-container {
-	position: absolute;
-	bottom: -4rem;
-}
-
-.video-container img {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: 2;
-	transform: scale(0.7);
-}
-
 .video-container video {
-	transform: scale(0.7);
-	z-index: 1;
 	position: absolute;
 	left: 1rem;
-	bottom: 1rem;
-	border-radius: 2rem;
+	bottom: 7px;
 }

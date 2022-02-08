@@ -267,6 +267,7 @@ nav button {
 .video-container {
 	position: absolute;
 	bottom: -4rem;
+	right: 1rem;
 }
 
 .video-container img {

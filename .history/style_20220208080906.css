@@ -14,8 +14,7 @@ h4 {
 }
 
 body {
-	width: 100vw;
-	overflow-x: hidden;
+	max-width: 100vw;
 }
 
 nav {

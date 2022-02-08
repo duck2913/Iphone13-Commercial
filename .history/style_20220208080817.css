@@ -14,8 +14,7 @@ h4 {
 }
 
 body {
-	width: 100vw;
-	overflow-x: hidden;
+	max-width: 100vw;
 }
 
 nav {
@@ -266,7 +265,7 @@ nav button {
 
 .video-container {
 	position: absolute;
-	bottom: -4rem;
+	bottom: -1re;
 }
 
 .video-container img {
