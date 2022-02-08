@@ -11,17 +11,12 @@ const tlIntro = gsap.timeline({
 	},
 	scrollTrigger: {
 		trigger: ".first-page",
-		start: "20%",
-		end: "80%",
-		pin: true,
-		pinSpacing: false,
+		start: "0%",
+		end: "70%",
 		scrub: true,
 	},
 });
-tlIntro.to(".first-page__content", { x: -100, opacity: 0 });
-tlIntro.fromTo(nav, { opacity: 1 }, { opacity: 0 }, "<");
-
-//showing back the nav when we hit the second page
+tlIntro.fromTo(nav, { opacity: 1 }, { opacity: 0 });
 const tlIntroReverse = gsap.timeline({
 	defaults: {
 		duration: 0.75,
@@ -44,17 +39,17 @@ const tlSecond = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".second-page",
 		start: "-30%",
-		end: "60%",
+		end: "30%",
 		scrub: true,
 	},
 });
 tlSecond.fromTo(
 	".highlight",
-	{ color: "rgba(255, 255, 255, 0.3)" },
-	{ color: "rgba(255, 255, 255, 1)", stagger: 1.2 },
+	{ color: "rgba(255, 255, 255, 0.5)" },
+	{ color: "rgba(255, 255, 255, 1)", stagger: 2 },
 	"<",
 );
-//hide the text that we already read
+
 const tlSecondRemove = gsap.timeline({
 	defaults: {
 		duration: 0.75,
@@ -62,13 +57,11 @@ const tlSecondRemove = gsap.timeline({
 	},
 	scrollTrigger: {
 		trigger: ".second-page",
-		start: "-10%",
-		end: "50%",
+		start: "-30%",
+		end: "30%",
 		scrub: true,
-		markers: true,
 	},
 });
-tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.3)", stagger: 3 });
 
 //carousel
 let z_index = 2;

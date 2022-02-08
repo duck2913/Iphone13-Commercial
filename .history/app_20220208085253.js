@@ -11,7 +11,7 @@ const tlIntro = gsap.timeline({
 	},
 	scrollTrigger: {
 		trigger: ".first-page",
-		start: "20%",
+		start: "0%",
 		end: "80%",
 		pin: true,
 		pinSpacing: false,
@@ -68,7 +68,7 @@ const tlSecondRemove = gsap.timeline({
 		markers: true,
 	},
 });
-tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.3)", stagger: 3 });
+tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.5)", stagger: 3 });
 
 //carousel
 let z_index = 2;

@@ -11,7 +11,7 @@ const tlIntro = gsap.timeline({
 	},
 	scrollTrigger: {
 		trigger: ".first-page",
-		start: "20%",
+		start: "0%",
 		end: "80%",
 		pin: true,
 		pinSpacing: false,

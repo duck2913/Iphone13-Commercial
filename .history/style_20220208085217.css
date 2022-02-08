@@ -19,7 +19,6 @@ body {
 }
 
 nav {
-	padding: 5rem 10rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -72,6 +71,7 @@ nav button {
 .first-page {
 	min-height: 100vh;
 	overflow: hidden;
+	padding: 5rem 10rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,13 +87,12 @@ nav button {
 	position: absolute;
 	z-index: -1;
 	width: 100vw;
-	/* height: 100vh; */
 }
 
 /* Second page */
 .second-page {
 	min-height: 150vh;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.4);
 	position: relative;
 	overflow: hidden;
 }
