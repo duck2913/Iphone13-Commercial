@@ -127,4 +127,8 @@ const tlFifth = gsap.timeline({
 		end: "20%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
+tlFifth.fromTo(
+	".product__text-container h3",
+	{ opacity: 0 },
+	{ duration: 1, opacity: 1, stagger: 1 },
+);

@@ -123,8 +123,12 @@ const tlFifth = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".fifth-page",
 		scrub: true,
-		start: "-20%",
-		end: "20%",
+		start: "-10%",
+		end: "50%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
+tlFifth.fromTo(
+	".product__text-container h3",
+	{ opacity: 0 },
+	{ duration: 1, opacity: 1, stagger: 1 },
+);

@@ -29,7 +29,7 @@ nav {
 	align-items: center;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba(255, 255, 255, 0.836);
+	background-color: rgba(255, 255, 255, 0.644);
 }
 
 nav .logo {
@@ -131,11 +131,11 @@ nav button {
 }
 
 .big-phone {
-	transform: scale(0.8) translateX(50%);
+	transform: scale(0.8) translateX(40%);
 }
 
 .small-phone {
-	transform: scale(0.8) translate(-50%, -6px);
+	transform: scale(0.8) translate(-5rem, -6px);
 }
 
 .product__size {
@@ -161,7 +161,6 @@ nav button {
 }
 /* left side */
 .left {
-	background-color: white;
 	flex: 1;
 	overflow: hidden;
 	position: relative;

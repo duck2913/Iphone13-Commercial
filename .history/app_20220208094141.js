@@ -121,10 +121,15 @@ colorsEl.forEach((colorEl, index) => {
 //fifth-page
 const tlFifth = gsap.timeline({
 	scrollTrigger: {
-		trigger: ".fifth-page",
+		trigger: ".third-page",
 		scrub: true,
-		start: "-20%",
-		end: "20%",
+
+		start: "-10%",
+		end: "100%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
+tlFifth.fromTo(
+	".product__text-container h3",
+	{ opacity: 0 },
+	{ duration: 1, opacity: 1, stagger: 1 },
+);

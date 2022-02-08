@@ -63,7 +63,7 @@ const tlSecondRemove = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".second-page",
 		start: "-10%",
-		end: "70%",
+		end: "50%",
 		scrub: true,
 	},
 });
@@ -71,30 +71,18 @@ tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.3)", stagger: 3 
 
 //third-page
 const tlThrid = gsap.timeline({
+	defaults: {
+		duration: 0.75,
+		ease: Power2.easeOut,
+	},
 	scrollTrigger: {
 		trigger: ".third-page",
 		scrub: true,
-		pinSpacing: false,
-		pin: true,
-		start: "10%",
-		end: "120%",
+		start: "-30%",
+		end: "50%",
 	},
 });
-tlThrid.fromTo(".big-phone", { x: "50%" }, { x: "40%" });
-tlThrid.fromTo(".small-phone", { x: "-40%" }, { x: "-30%" }, "<");
-tlThrid.fromTo(
-	".container--left",
-	{ x: -10, opacity: 0.8 },
-	{ duration: 1, x: 0, opacity: 1 },
-	"<",
-);
-tlThrid.fromTo(
-	".container--right",
-	{ x: 10, opacity: 0.8 },
-	{ duration: 1, x: 0, opacity: 1 },
-	"<",
-);
-
+tlThrid.to(".big-phone", { x: "5px" });
 //carousel
 let z_index = 2;
 let currentColor = "blue";
@@ -117,14 +105,3 @@ colorsEl.forEach((colorEl, index) => {
 		z_index++;
 	});
 });
-
-//fifth-page
-const tlFifth = gsap.timeline({
-	scrollTrigger: {
-		trigger: ".fifth-page",
-		scrub: true,
-		start: "-20%",
-		end: "20%",
-	},
-});
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });

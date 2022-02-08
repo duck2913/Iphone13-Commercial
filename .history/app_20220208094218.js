@@ -124,7 +124,11 @@ const tlFifth = gsap.timeline({
 		trigger: ".fifth-page",
 		scrub: true,
 		start: "-20%",
-		end: "20%",
+		end: "30%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
+tlFifth.fromTo(
+	".product__text-container h3",
+	{ opacity: 0 },
+	{ duration: 1, opacity: 1, stagger: 1 },
+);
