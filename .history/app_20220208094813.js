@@ -124,10 +124,10 @@ const tlFifth = gsap.timeline({
 		trigger: ".fifth-page",
 		scrub: true,
 		start: "-20%",
-		end: "20%",
+		end: "10%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 0.5 });
+tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
 
 // final-page
 const tlParallax = gsap.timeline({
@@ -140,4 +140,4 @@ const tlParallax = gsap.timeline({
 });
 tlParallax.fromTo(".text", { y: 0 }, { y: -80 });
 tlParallax.fromTo(".portrait", { y: 0 }, { y: -60 }, "<");
-tlParallax.fromTo(".video-container", { y: 0 }, { y: -70 }, "<");
+tlParallax.fromTo(".video-container", { y: 0 }, { y: -200 }, "<");

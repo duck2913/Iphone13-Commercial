@@ -127,17 +127,14 @@ const tlFifth = gsap.timeline({
 		end: "20%",
 	},
 });
-tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 0.5 });
+tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stagger: 1 });
 
 // final-page
 const tlParallax = gsap.timeline({
 	scrollTrigger: {
-		trigger: ".final-page",
+		trigger: ".fifth-page",
 		scrub: true,
-		start: "-30%",
-		end: "50%",
+		start: "-20%",
+		end: "20%",
 	},
 });
-tlParallax.fromTo(".text", { y: 0 }, { y: -80 });
-tlParallax.fromTo(".portrait", { y: 0 }, { y: -60 }, "<");
-tlParallax.fromTo(".video-container", { y: 0 }, { y: -70 }, "<");

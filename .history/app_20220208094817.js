@@ -140,4 +140,4 @@ const tlParallax = gsap.timeline({
 });
 tlParallax.fromTo(".text", { y: 0 }, { y: -80 });
 tlParallax.fromTo(".portrait", { y: 0 }, { y: -60 }, "<");
-tlParallax.fromTo(".video-container", { y: 0 }, { y: -70 }, "<");
+tlParallax.fromTo(".video-container", { y: 0 }, { y: -200 }, "<");
