@@ -15,7 +15,7 @@ const tlIntro = gsap.timeline({
 		end: "80%",
 		pin: true,
 		pinSpacing: false,
-		scrub: 1,
+		scrub: true,
 	},
 });
 tlIntro.to(".first-page__content", { x: -100, opacity: 0 });
@@ -30,7 +30,7 @@ const tlIntroReverse = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".second-page",
 		start: "-10%",
-		scrub: 1,
+		scrub: true,
 	},
 });
 tlIntroReverse.to(nav, { opacity: 1 });
@@ -45,7 +45,7 @@ const tlSecond = gsap.timeline({
 		trigger: ".second-page",
 		start: "-30%",
 		end: "60%",
-		scrub: 1,
+		scrub: true,
 	},
 });
 tlSecond.fromTo(
@@ -64,7 +64,7 @@ const tlSecondRemove = gsap.timeline({
 		trigger: ".second-page",
 		start: "-10%",
 		end: "70%",
-		scrub: 1,
+		scrub: true,
 	},
 });
 tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.3)", stagger: 3 });
@@ -73,7 +73,7 @@ tlSecondRemove.to(".highlight", { color: "rgba(255, 255, 255, 0.3)", stagger: 3 
 const tlThrid = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".third-page",
-		scrub: 1,
+		scrub: true,
 		pinSpacing: false,
 		pin: true,
 		start: "10%",
@@ -122,7 +122,7 @@ colorsEl.forEach((colorEl, index) => {
 const tlFifth = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".fifth-page",
-		scrub: 1,
+		scrub: true,
 		start: "-20%",
 		end: "20%",
 	},
@@ -133,11 +133,11 @@ tlFifth.fromTo(".product__text-container h3", { opacity: 0 }, { opacity: 1, stag
 const tlParallax = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".final-page",
-		scrub: 1,
+		scrub: true,
 		start: "-30%",
 		end: "50%",
 	},
 });
 tlParallax.fromTo(".text", { y: 0 }, { y: -80 });
-tlParallax.fromTo(".portrait", { y: 0 }, { y: -100 }, "<");
-tlParallax.fromTo(".video-container", { y: 0 }, { y: -50 }, "<");
+tlParallax.fromTo(".portrait", { y: 0 }, { y: -60 }, "<");
+tlParallax.fromTo(".video-container", { y: 0 }, { y: -70 }, "<");

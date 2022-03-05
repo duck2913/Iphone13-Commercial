@@ -139,5 +139,5 @@ const tlParallax = gsap.timeline({
 	},
 });
 tlParallax.fromTo(".text", { y: 0 }, { y: -80 });
-tlParallax.fromTo(".portrait", { y: 0 }, { y: -100 }, "<");
-tlParallax.fromTo(".video-container", { y: 0 }, { y: -50 }, "<");
+tlParallax.fromTo(".portrait", { y: 0 }, { y: -60 }, "<");
+tlParallax.fromTo(".video-container", { y: 0 }, { y: -70 }, "<");

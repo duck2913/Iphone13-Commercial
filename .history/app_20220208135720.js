@@ -3,6 +3,8 @@ const nav = document.querySelector("nav");
 const slides = document.querySelectorAll(".img__container");
 const gallery = document.querySelector(".gallery");
 
+const locoScroll = 
+
 // first page
 const tlIntro = gsap.timeline({
 	defaults: {
